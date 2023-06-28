@@ -1,0 +1,189 @@
+/* header */
+.header-container {
+    /* Arranged horizontally using flex. */
+    display: flex;
+    /* Letters arranged in the middle. */
+    align-items: center;
+    /* Spacing was adjusted using padding. */
+    padding: 10px;
+    background-color:  #3cb371;
+    border: 5px solid #008b8b;
+    /* The margin-bottom is used to create the space between the header and body. */
+    margin-bottom: 10px;
+}
+      
+.logo {
+    /* Text is right-aligned. */
+    margin-right:auto ;
+}
+      
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+      
+.navigation li {
+    /* The following elements were used to pull the image to the left and surround it with text. */
+    margin-left: 10px;
+}
+
+/* Logo size adjusted. */
+.logo img{
+    width: 80px;
+}
+
+/* cssboxmodel */
+/* The background colour is specified as black in margin. */
+.margin{
+    background-color: black; 
+    margin: 5px;
+    /* padding is used to surround the content inside. */
+    padding: 30px;
+}
+
+/* Border colour and position specified. */
+.border{
+    margin-left: 50px; 
+    margin-right: 50px;
+    border: 10px solid gray;
+}
+
+/* Background colour set using padding. */
+.padding{
+    background-color: gainsboro;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/* Text is installed using width and height. */
+.content{
+    width: 80%;
+    height: 80%;
+    background-color: yellow;
+    /* We used auto to bring the text to the middle. */
+    margin: 0 auto;
+}
+
+/* floatedleft */
+.blockcontainers{
+    border-width: 10px;
+    /* Double borders with the following elements. */
+    border-style: double;
+    border-color: black;
+    padding: 10px;
+}
+
+/* Text is installed using width and height. */
+.blockcontainers img{
+    width: 500px;
+    margin-right: 30px;
+    /* The image is left-aligned with float-left and surrounded by text. */
+    float: left;
+}
+
+/* floatedright */
+.blockcontainersright{
+    border-width: 10px;
+    /* Double borders with the following elements. */
+    border-style: double;
+    border-color: black;
+    padding: 10px;
+}
+
+.blockcontainersright img{
+    /* As this is a vertical image, the height was used to adjust the size. */
+    height: 400px;
+    margin-right: 30px;
+    /* The following elements were used to pull the image to the right and surround it with text. */
+    float: right;  
+}
+
+/* blockelements */ 
+/* The entire Body is enclosed with a border. */
+.block1{
+    border: 5px solid black;
+    text-align: center;
+}
+
+/* The following element specifies a box surrounding the title 'Nagano'. */
+.block2{
+    border: 5px solid black;
+    padding: 10px;
+    /* I used this elements for putting letter to center. */
+    text-align: center;
+    margin: 10px;
+}
+
+/* The following element specifies a box surrounding the content of 'Nagano'page. */
+.block3{
+    border: 5px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* flexboxlayouts */
+/* Flexboxes were used in the following elements */
+.flexcontainer1{
+    display: flex;
+    padding: 10px;
+}
+
+/* A box has been created on the left-hand side with a list of names for the photos. */
+#flexcontainer2{
+    border: 5px solid green;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Images are grouped together and flexboxed to ensure they are in order. */
+.flexcontainer3{
+    display: flex;
+    /* Specified that flex items are automatically wrapped to multiple lines if they do not fit on a single line. */
+    flex-wrap: wrap;
+    /* Instructed to place the box horizontally when flexboxes are used. */
+    justify-content: start;
+    border: 5px solid green;
+    /* Extra white space on the right side was adjusted using margin. */
+    margin: 10px;
+    /* padding was used to adjust the position of the image. */
+    padding: 10px;
+}
+
+/* All images have the same class name and spacing. */
+.flexitem{
+    margin: 5px;
+    align-items: center;
+    object-fit: cover;
+}
+
+/* All images were given the same class name and adjusted to the same size. */
+.flexcontainer3 .flexitem{
+    width: 200px;
+}
+
+/* footer */
+.footercontainer{
+    /* I have specified a flexbox. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* To bring text to the bottom, padding-top was used. */
+    padding-top: 50px;
+    background-color: #3cb371;
+    border: 5px solid #008b8b;
+    /* I deleaded mark of the list. */
+    list-style: none;
+    /* Adjustment of the space between body. */
+    margin-top:10px; ;
+}
+
+/* Space was created for each word. */
+.footeritem{
+    margin: 0 20px;
+}
+
